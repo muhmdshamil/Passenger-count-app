@@ -1,0 +1,115 @@
+/* General Styles */
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background-image: url(station.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; /* Prevents repeating */
+    
+}
+
+/* Container Styles */
+.container {
+    width: 90%; /* Adjust for small devices */
+    max-width: 300px; /* Maintain a maximum width */
+    background-color: rgb(107, 69, 69);
+    color: white;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, border 0.3s; /* Smooth transitions */
+}
+
+.container button {
+    width: 100%;
+    height: 40px; /* Increased height for better usability */
+    font-size: 18px;
+    border-radius: 10px;
+    font-weight: 600;
+    background-color: rgb(238, 219, 95);
+    color: brown;
+    margin-bottom: 10px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out; /* Smooth hover effects */
+}
+
+#save-btn {
+    background-color: rgb(9, 165, 9);
+    color: white;
+}
+
+/* Button Hover Effects */
+button:hover {
+    border: 2px solid rgb(158, 240, 33);
+    transform: scale(1.05); /* Subtle scale effect */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Container Hover Effects */
+.container:hover {
+    border: 3px solid rgb(158, 240, 33);
+}
+
+/* Count Element Styling */
+.container #count-el {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Paragraph Styling */
+p {
+    font-weight: 500;
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Heading Styling */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 80%; /* Adjust width for medium devices */
+    }
+    body {
+        background-attachment: scroll; /* Adjust if fixed causes issues */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%; /* Adjust width for smaller devices */
+        padding: 15px;
+    }
+    body {
+        background-attachment: scroll; /* Adjust if fixed causes issues */
+    }
+
+    button {
+        font-size: 16px; /* Adjust font size for buttons */
+        height: 35px; /* Adjust height for smaller screens */
+    }
+
+    h1 {
+        font-size: 20px; /* Adjust heading size */
+    }
+}
